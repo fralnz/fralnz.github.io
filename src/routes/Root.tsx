@@ -1,25 +1,35 @@
+import {CSSProperties} from "react";
 import {Outlet, NavLink} from 'react-router-dom';
 import "../styles/Header.css"
 
-interface LinkStyleProps {
-    isActive: boolean;
-}
-
-const linkStyle = ({ isActive }: LinkStyleProps): { color: string } => ({
+const linkStyle = ({isActive}: { isActive: boolean }): CSSProperties => ({
     color: isActive ? 'red' : 'inherit',
+    background: isActive ? 'rgb(255, 255, 255)' : 'inherit',
+    borderRadius: isActive ? '1rem' : 'inherit',
+    padding: isActive ? '.5rem' : 'inherit',
 });
+
 
 const Root = () => {
     return (
         <>
             <nav className="navbar">
                 <ul>
-                    <NavLink style={linkStyle} to="/">
-                        whoami
-                    </NavLink>
-                    <NavLink style={linkStyle} to="/projects">
-                        projects
-                    </NavLink>
+                    <li>
+                        <NavLink style={linkStyle} to="/">
+                            Who Am I?
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink style={linkStyle} to="/projects">
+                            Projects
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink style={linkStyle} to="/projects">
+                            Contact Me
+                        </NavLink>
+                    </li>
                 </ul>
             </nav>
             <Outlet/>

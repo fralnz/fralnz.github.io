@@ -1,3 +1,20 @@
-.navbar{
+.navbar {
     color: white;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 1rem;
+}
+
+.navbar li {
+    list-style-type: none;
+    padding: .5rem;
 }

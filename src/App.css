@@ -1,0 +1,59 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.pfp {
+    width: 20rem;
+    border-radius: 50%;
+}
+
+.speechBubbleBody {
+    background-color: #dddde1;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.speechBubbleTailBottom {
+    position: absolute;
+    bottom: -20px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #dddde1;
+}
+
+.introduction{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.introduction img {
+    width: 30rem;
+    transition: .2s;
+}
+
+.introduction img:hover{
+    width: 31rem;
+    animation: snapRotate 4s steps(6) infinite;
+}
+
+@keyframes snapRotate {
+    0% { transform: rotate(0deg); }
+    16.67% { transform: rotate(20deg); }
+    33.34% { transform: rotate(-20deg); }
+    50% { transform: rotate(20deg); }
+    66.67% { transform: rotate(-20deg); }
+    83.34% { transform: rotate(20deg); }
+    100% { transform: rotate(0deg); }
+}

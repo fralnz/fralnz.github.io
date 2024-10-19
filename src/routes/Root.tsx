@@ -1,6 +1,7 @@
 import {CSSProperties} from "react";
 import {Outlet, NavLink} from 'react-router-dom';
 import "../styles/Header.css"
+import Footer from "./components/Footer.tsx";
 
 const linkStyle = ({isActive}: { isActive: boolean }): CSSProperties => ({
     color: isActive ? 'red' : 'inherit',
@@ -33,6 +34,7 @@ const Root = () => {
                 </ul>
             </nav>
             <Outlet/>
+            <Footer/>
         </>
     )
 }

@@ -3,6 +3,7 @@
     width: auto;
     display: flex;
     flex-direction: column;
+    transition: .2s;
 }
 
 .navbar ul {

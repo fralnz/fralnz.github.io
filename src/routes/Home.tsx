@@ -1,8 +1,8 @@
-import pfpImg from "./assets/pfp.png";
-import gbHand from "./assets/gbHand.png";
-import "./App.css";
+import pfpImg from "../assets/pfp.png";
+import gbHand from "../assets/gbHand.png";
+import "../styles/Home.css";
 
-function App() {
+function Home() {
     return (
         <>
             <section className="speechTitle">
@@ -29,4 +29,4 @@ function App() {
     );
 }
 
-export default App;
+export default Home;

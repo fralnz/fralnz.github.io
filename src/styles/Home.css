@@ -8,6 +8,13 @@
 .pfp {
     width: 20rem;
     border-radius: 50%;
+    margin-top: .5rem;
+}
+
+.speechTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .speechBubbleBody {
@@ -20,6 +27,8 @@
     margin-bottom: 20px;
     padding: 20px;
     color: #282828;
+    width: fit-content;
+    min-width: 60px;
 }
 
 .speechBubbleTailBottom {

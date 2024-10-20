@@ -1,13 +1,35 @@
+.cardSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2rem;
+    gap: 1rem
+}
+
 .projectCard {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     height: 28dvh;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.projectCard:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px;
+}
+
+.projectCard:hover img {
+    transform: translateY(15px);
 }
 
 .big-card {
     width: 60%;
+}
+
+.small-card {
+    width: 30%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -21,7 +43,11 @@
 }
 
 .blue-background {
-    background-color: #98daff;
+    background-color: #88c2e3;
+}
+
+.blue-background:hover {
+    background-color: #95d5fa;
 }
 
 .projectCard h3 {
@@ -35,4 +61,5 @@
     width: 100%;
     height: 500px;
     object-fit: contain;
+    transition: all 0.3s ease-in-out;
 }

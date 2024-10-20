@@ -10,9 +10,14 @@
     border-radius: 50%;
     margin-top: .5rem;
     margin-bottom: 1rem;
+    transition: all 0.3s ease-in-out;
 }
 
-.speechTitle{
+.pfp:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px;
+}
+
+.speechTitle {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,7 +58,7 @@
     justify-content: space-between;
 }
 
-.introduction p{
+.introduction p {
     width: 65%;
 }
 
@@ -64,13 +69,15 @@
 }
 
 @media only screen and (orientation: portrait) {
-    .introduction{
+    .introduction {
         flex-direction: column;
     }
+
     .introduction p {
         width: 100%;
     }
-    .introduction img{
+
+    .introduction img {
         width: 100%;
         max-width: 500px;
     }

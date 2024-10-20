@@ -33,7 +33,7 @@
     width: 30%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (orientation: portrait) {
     .projectCard {
         width: 100%;
     }
@@ -56,7 +56,7 @@
 }
 
 .projectCard h3 {
-    font-size: 4rem;
+    font-size: 2em;
     color: white;
     align-self: end;
     margin: .5rem 1rem;

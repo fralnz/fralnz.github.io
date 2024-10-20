@@ -1,20 +1,22 @@
 #root {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0 2rem;
     text-align: center;
 }
 
 .pfp {
-    width: 20rem;
+    width: 40%;
     border-radius: 50%;
     margin-top: .5rem;
+    margin-bottom: 1rem;
 }
 
 .speechTitle{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100dvw;
 }
 
 .speechBubbleBody {
@@ -23,12 +25,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     position: relative;
     margin-bottom: 20px;
     padding: 20px;
     color: #282828;
     width: fit-content;
     min-width: 60px;
+    max-width: 100%;
 }
 
 .speechBubbleTailBottom {
@@ -44,17 +48,35 @@
 .introduction {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
+.introduction p{
+    width: 65%;
+}
+
 .introduction img {
-    width: 30rem;
+    width: 35%;
+    max-width: 100%;
     transition: .2s;
 }
 
+@media only screen and (orientation: portrait) {
+    .introduction{
+        flex-direction: column;
+    }
+    .introduction p {
+        width: 100%;
+    }
+    .introduction img{
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
 .introduction img:hover {
-    width: 31rem;
     animation: snapRotate 4s steps(6) infinite;
 }
 
@@ -80,4 +102,9 @@
     100% {
         transform: rotate(0deg);
     }
+}
+
+.projectShowcase {
+    width: 100%;
+    margin-top: 2rem;
 }

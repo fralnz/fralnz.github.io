@@ -4,6 +4,7 @@
     white-space: nowrap;
     overflow: hidden;
     font-family: monospace;
+    max-width: 100%;
 }
 
 @keyframes typing {

@@ -18,7 +18,7 @@ const Root = () => {
                 <ul>
                     <li>
                         <NavLink style={linkStyle} to="/">
-                            Who Am I?
+                            Home
                         </NavLink>
                     </li>
                     <li>
@@ -28,7 +28,7 @@ const Root = () => {
                     </li>
                     <li>
                         <NavLink style={linkStyle} to="/projects">
-                            Contact Me
+                            Contact
                         </NavLink>
                     </li>
                 </ul>

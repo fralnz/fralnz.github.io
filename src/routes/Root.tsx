@@ -4,10 +4,10 @@ import "../styles/Header.css"
 import Footer from "./components/Footer.tsx";
 
 const linkStyle = ({isActive}: { isActive: boolean }): CSSProperties => ({
-    color: isActive ? 'red' : 'inherit',
+    color: isActive ? '#242424' : 'inherit',
     background: isActive ? 'rgb(255, 255, 255)' : 'inherit',
     borderRadius: isActive ? '1rem' : 'inherit',
-    padding: isActive ? '.5rem' : 'inherit',
+    padding: isActive ? '.8rem' : 'inherit',
 });
 
 

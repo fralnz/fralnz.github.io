@@ -72,3 +72,10 @@
         transform: rotate(0deg);
     }
 }
+
+.cardSection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2rem;
+}

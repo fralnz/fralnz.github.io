@@ -1,6 +1,7 @@
-import pfpImg from "../assets/pfp.png";
-import gbHand from "../assets/gbHand.png";
+import pfpImg from "../assets/imgs/pfp.png";
+import gbHand from "../assets/imgs/gbHand.png";
 import "../styles/Home.css";
+import ProjectCard from "./components/ProjectCard.tsx";
 
 function Home() {
     return (
@@ -24,6 +25,9 @@ function Home() {
                     </p>
                 </div>
                 <img src={gbHand}/>
+            </section>
+            <section className="cardSection">
+                <ProjectCard/>
             </section>
         </>
     );

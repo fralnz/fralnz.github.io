@@ -3,13 +3,17 @@ import gbHand from "../assets/imgs/gbHand.png";
 import "../styles/Home.css";
 import "../styles/Typing.css";
 import ProjectCards from "./components/ProjectCards.tsx";
+import TypeWriter from "./components/TypeWriter.tsx";
 
 function Home() {
     return (
         <>
             <section className="speechTitle">
                 <div className="speechBubbleBody">
-                    <h1>Hi, I'm Francesco. I like computers.</h1>
+                    <TypeWriter
+                        text="Hi, I'm Francesco. I like computers."
+                        speed={100}
+                    />
                     <div className="speechBubbleTailBottom"></div>
                 </div>
                 <div>

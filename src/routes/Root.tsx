@@ -14,8 +14,8 @@ const linkStyle = ({isActive}: { isActive: boolean }): CSSProperties => ({
 const Root = () => {
     return (
         <>
-            <nav className="navbar">
-                <ul>
+            <nav className="navbar-container">
+                <ul className={"navbar"}>
                     <li>
                         <NavLink style={linkStyle} to="/">
                             Home

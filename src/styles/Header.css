@@ -1,16 +1,19 @@
-.navbar {
-    color: white;
-    width: auto;
+.navbar-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     transition: .2s;
     margin-bottom: 3rem;
-}
-
-.navbar ul {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;

@@ -8,13 +8,13 @@ const Footer = () => {
                 <b>Socials</b>
                 <ul>
                     <li>
-                        Linkedin
+                        <a href="https://www.linkedin.com/in/fralnz/">Linkedin</a>
                     </li>
                     <li>
-                        GitHub
+                        <a href="https://github.com/fralnz">GitHub</a>
                     </li>
                     <li>
-                        Instagram
+                        <a href="https://www.instagram.com/francesco.lnz/">Instagram</a>
                     </li>
                 </ul>
             </div>

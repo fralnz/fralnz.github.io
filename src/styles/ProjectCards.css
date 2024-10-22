@@ -55,6 +55,14 @@
     background-color: #95d5fa;
 }
 
+.green-background {
+    background-color: #80d886;
+}
+
+.green-background:hover {
+    background-color: #95fa9d;
+}
+
 .projectCard h3 {
     font-size: 2em;
     color: white;

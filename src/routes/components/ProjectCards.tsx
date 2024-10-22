@@ -9,7 +9,7 @@ const ProjectCards = () => {
                 <h3>SlimNotes</h3>
                 <img src={slimNotes} alt="Slim Notes Mockup"></img>
             </span>
-            <span className="projectCard small-card pink-background">
+            <span className="projectCard small-card green-background">
                 <h3>TCP Note</h3>
                 <img src={netNote} alt="Net Notes Mockup"></img>
             </span>

@@ -8,7 +8,6 @@ const NavBar = () => {
         color: isActive ? '#242424' : 'inherit',
         background: isActive ? 'rgb(255, 255, 255)' : 'inherit',
         borderRadius: isActive ? '2rem' : 'inherit',
-        padding: isActive ? '.8rem' : 'inherit',
     });
 
     return (

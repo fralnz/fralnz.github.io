@@ -21,5 +21,14 @@
 
 .navbar li {
     list-style-type: none;
-    padding: .5rem;
+}
+
+.navbar a {
+    padding: .8rem;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease, padding 0.3s ease;
+}
+
+.navbar a:hover {
 }

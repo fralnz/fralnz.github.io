@@ -25,6 +25,12 @@
     max-width: 100dvw;
 }
 
+.speechText{
+    font-size: 2rem;
+    line-height: 1.1;
+    font-weight: 800;
+}
+
 .speechBubbleBody {
     background-color: #dddde1;
     border-radius: 30px;

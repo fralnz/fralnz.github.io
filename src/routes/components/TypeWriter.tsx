@@ -30,9 +30,9 @@ const TypeWriter = memo(({
     }, [text]);
 
     return (
-        <h1 className={className}>
+        <p className={className}>
             {text.slice(0, currentIndex)}
-        </h1>
+        </p>
     );
 });
 

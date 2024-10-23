@@ -1,5 +1,9 @@
+import "../styles/Contact.css"
+
 const Contact = () => {
-    return (<></>)
+    return (<>
+        <h3 className="contactTitle">Contact Me.</h3>
+    </>)
 }
 
 export default Contact;

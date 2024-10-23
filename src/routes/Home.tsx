@@ -13,6 +13,7 @@ function Home() {
                     <TypeWriter
                         text="Hi, I'm Francesco. I like computers."
                         speed={100}
+                        className="speechText"
                     />
                     <div className="speechBubbleTailBottom"></div>
                 </div>

@@ -9,6 +9,7 @@ import {
 import Root from "./routes/Root.tsx";
 import Projects from "./routes/Projects.tsx";
 import Contact from "./routes/Contact.tsx";
+import About from "./routes/About.tsx";
 
 const router = createBrowserRouter([
     {
@@ -16,7 +17,10 @@ const router = createBrowserRouter([
         element: <Root/>,
         children: [
             {index: true, element: <Home/>},
-
+            {
+                path: '/about',
+                element: <About/>,
+            },
             {
                 path: '/projects',
                 element: <Projects/>,

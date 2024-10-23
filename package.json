@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -d dist --cname custom-domain.com",
+    "deploy": "gh-pages -d build -d dist --cname fralnz.com",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"

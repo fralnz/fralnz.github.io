@@ -29,7 +29,7 @@ const About = () => (
                 iconStyle={{ background: '#F8485E', color: '#fff' }}
                 icon={<MdWork />}
             >
-                <h3 className="vertical-timeline-element-title">Frontend Developer - Intern</h3>
+                <h3 className="vertical-timeline-element-title">Full Stack Developer - Intern</h3>
                 <h4 className="vertical-timeline-element-subtitle">DevoTeam Cyber Trust, Lisbon</h4>
                 <p>Built and tested features for Cyber Security and Compliance platforms using Symfony PHP.</p>
             </VerticalTimelineElement>

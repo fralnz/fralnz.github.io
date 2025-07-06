@@ -11,6 +11,13 @@ import Projects from "./routes/Projects.tsx";
 import Contact from "./routes/Contact.tsx";
 import About from "./routes/About.tsx";
 
+// Handle redirect from 404.html
+const redirectPath = new URLSearchParams(window.location.search).get('redirect');
+if (redirectPath) {
+    window.history.replaceState(null, '', redirectPath);
+}
+
+
 const router = createBrowserRouter([
     {
         path: '/',

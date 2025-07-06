@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0;url=/index.html">
+    <script type="text/javascript">
+        // redirect to /index.html with the original path preserved in query string
+        var redirectTo = '/index.html?redirect=' + encodeURIComponent(
+            window.location.pathname + window.location.search + window.location.hash
+        );
+        window.location.replace(redirectTo);
+    </script>
+</head>
+<body>
+Redirecting...
+</body>
+</html>

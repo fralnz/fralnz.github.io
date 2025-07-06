@@ -9,6 +9,7 @@ import "../styles/About.css"
 const About = () => (
     <>
         <h1>About Me.</h1>
+        <p>Here's a little timeline of my journey so far. Let's expand it <b><u>together</u></b>.</p>
         <VerticalTimeline>
             <VerticalTimelineElement
                 iconStyle={{ background: '#80d886', color: '#fff' }}

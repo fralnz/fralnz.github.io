@@ -4,11 +4,16 @@ import "../../styles/NavBar.css"
 
 const NavBar = () => {
 
-    const linkStyle = ({isActive}: { isActive: boolean }): CSSProperties => ({
-        color: isActive ? '#242424' : 'inherit',
-        background: isActive ? 'rgb(255, 255, 255)' : 'inherit',
-        borderRadius: isActive ? '2rem' : 'inherit',
-    });
+    const linkStyle = ({ isActive }: { isActive: boolean }): CSSProperties => {
+        const isLightMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+
+        return {
+            color: isActive ? (isLightMode ? '#ffffff' : '#213547') : 'inherit',
+            background: isActive ? (isLightMode ? '#213547' : '#ffffff') : 'inherit',
+            borderRadius: isActive ? '2rem' : 'inherit',
+        };
+    };
+
 
     return (
         <nav className="navbar-container">

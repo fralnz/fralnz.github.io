@@ -2,3 +2,23 @@ h3 {
     font-family: Satoshi, sans-serif;
     src: url(../assets/fonts/Satoshi.ttf);
 }
+
+:root {
+    --timeline-accent1: #80d886;
+    --timeline-accent2: #f8485e;
+    --timeline-accent3: #88c2e3;
+    --timeline-neutral: #9ca3af;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --timeline-accent1: #22c55e;
+        --timeline-accent2: #ef4444;
+        --timeline-accent3: #0ea5e9;
+        --timeline-neutral: #6b7280;
+    }
+
+    .vertical-timeline::before {
+        background: #d1d5db;
+    }
+}

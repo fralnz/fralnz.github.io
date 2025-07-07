@@ -3,7 +3,7 @@ import {
     VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import {MdSchool, MdWork} from 'react-icons/md';
+import {MdRocket, MdSchool, MdWork} from 'react-icons/md';
 import "../styles/About.css"
 
 const About = () => (
@@ -50,7 +50,7 @@ const About = () => (
 
             <VerticalTimelineElement
                 iconStyle={{ background: '#9ca3af', color: '#fff' }}
-                icon={<MdSchool />}
+                icon={<MdRocket />}
                 date="Start"
                 contentStyle={{ background: '#9ca3af', color: '#fff', textAlign: 'center' }}
                 contentArrowStyle={{ borderRight: '7px solid #9ca3af' }}

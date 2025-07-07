@@ -11,3 +11,11 @@
     text-align: left;
     padding: 0
 }
+
+.footer-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 1rem;
+}
